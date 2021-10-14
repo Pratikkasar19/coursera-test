@@ -1,0 +1,4 @@
+Use this command for browser Syncing
+----------------------------------------
+
+browser-sync start --server --directory --files "*"

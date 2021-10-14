@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Gridpage</title>
+</head>
+<style>
+*{
+  	box-sizing: border-box;  
+  	/*
+  	  border-box   ---------->     "content + padding + border" 
+  	  content-box  ---------->     "only content"
+  	*/           
+  }
+p{
+     background-color: violet;
+     margin-left: auto;
+     margin-right: auto;
+     border: 1px orange solid;
+     width: 90%;
+     height: 150px;
+     padding: 10px;
+} 
+
+.row{
+	width: 100%;
+}
+
+@media(min-width: 1200px){
+.cl-lg-3{
+	border: 2px green solid;
+	float: left;
+}
+.cl-lg-3{
+	width: 25%;
+}
+}
+
+@media(min-width: 950px) and (max-width: 1199px){
+.cl-md-6{
+	border: 2px green solid;
+	float: left;
+}	
+.cl-md-6{
+	width: 50%;
+}
+}
+</style>	
+<body>
+   <h1>Responsive Layout</h1>
+
+   <div class="row">
+   <div class="cl-lg-3 cl-md-6"><p>Item 1</p></div>
+   <div class="cl-lg-3 cl-md-6"><p>Item 2</p></div>
+   <div class="cl-lg-3 cl-md-6"><p>Item 3</p></div>
+   <div class="cl-lg-3 cl-md-6"><p>Item 4</p></div>
+   
+   <div class="cl-lg-3 cl-md-6"><p>Item 5</p></div>
+   <div class="cl-lg-3 cl-md-6"><p>Item 6</p></div>
+   <div class="cl-lg-3 cl-md-6"><p>Item 7</p></div>
+   <div class="cl-lg-3 cl-md-6"><p>Item 8</p></div>
+   </div>
+</body>
+</html>
