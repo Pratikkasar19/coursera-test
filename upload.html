@@ -1,105 +1,29 @@
-<!DOCTYPE html>
+<!Doctype html>
 <html>
 <head>
+    <title>Assignmennt solution for module 2</title>
     <meta name="viewport" content="width=device-width, user-scalable=no">
-    <title>Dashboard</title>
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link rel="stylesheet" type="text/css" href="css/titlebar.css">
-    <link rel="stylesheet" type="text/css" href="css/uploadplacebox.css">
+    <link rel="stylesheet" type="text/css" href="css/stylesheet.css">
 </head>
-<script>
-  function menuReduce(){
-      var val = document.getElementById("box").style.left;
-      if(val != "65px")
-      {   
-         for (let element of document.getElementsByClassName("title")){
-             element.style.display="none"; }
-         document.getElementById("navigation").style.width = "65px";
-         document.getElementById("box").style.setProperty('left','65px');
-         document.getElementById("box").style.setProperty('width','calc(100% - 65px)');
-      }
-      else{
-           document.getElementById("box").style.setProperty('width','calc(100% - 250px)');
-           document.getElementById("box").style.setProperty('left','250px');
-           document.getElementById("navigation").style.width = "250px";
-
-        for (let element of document.getElementsByClassName("title")){
-              element.style.display="inline-block"; }
-         
-         
-      }  
-  }
-</script>
 <body>
-    <div class="container">
-
-      <div class="titlebar">
-        <span class="icon menu" onclick="menuReduce()"><i class="fa fa-bars" aria-hidden="true"></i></span>
-        <span class="main" >Travelsolo</span>
-        <span class="signin">Sign In</span>
-        <input type="search" class="search" placeholder="Search">
-        <span class="searchicon"><i class="fa fa-search" aria-hidden="true"></i></span>
-      </div>
-
-    <div id="navigation">
-        <ul>
-            <li>
-             <a href="#">
-               <div class="iconbox"><span class="icon"><i class="fa fa-home" aria-hidden="true"></i></span></div>
-               <div class="titlebox"><span class="title">Home</span></div>  
-             </a>
-            </li>
-            <li>
-             <a href="#">
-              <div class="iconbox"><span class="icon"><i class="fa fa-map-marker" aria-hidden="true"></i></span></div>
-               <div class="titlebox"><span class="title">Places</span></div>  
-             </a>
-            </li>
-            <li>
-            <a href="#">
-              <div class="iconbox"><span class="icon"><i class="fa fa-cloud-upload" aria-hidden="true"></i></span></div>
-              <div class="titlebox"><span class="title">Upload Place</span></div>  
-            </a>
-            </li> 
-            <li>
-            <a href="#">
-              <div class="iconbox"><span class="icon"><i class="fa fa-cog" aria-hidden="true"></i></span></div>
-              <div class="titlebox"><span class="title">Setting</span></div>  
-            </a>
-            </li>          
-        </ul>
+    <h3>Our Menu</h3>
+    <div class="menus menu1">
+    <section class="menu1">
+        <div class="recepie">Pohe</div>
+        <p>"Pohe" is very delecious breakfast food. Most of the indian people eats "pohe" in their breakfast. They are made from the rice. It is spicy in taste.</p>
+    </section>
     </div>
-    <div id="box">
-        <div class="inputs">
-           <div class="text">Name of the Place:</div>
-           <input class="placename b"></input>
-           <div class="text">Address:</div>
-           <textarea  rows="8" cols="60" class="address b"></textarea>
-           <div class="text">Category:</div>
-
-           <div>
-           <select class="cat b" name="category">
-             <option value="Cultural">Cultural Heritage</option>  
-             <option value="Nature">Nature</option>
-             <option value="Beach">Beach</option>
-             <option value="City">City</option>
-           </select>
-           </div>
-        
-           <span class="text lt">latitude:</span>
-           <span class="text lg">longitude:</span>
-           
-           <div> 
-            <input type="text" class="lt b"></input>
-            <input type="text" class="lg b"></input>
-           </div>
-           <div class="text">Description:</div>    
-           <textarea  rows="8" cols="60" class="desc b"></textarea>
-           
-           <div id="imageContainer">Drop Images</div>
-        </div>         
-    </div> 
+    <div class="menus menu2">
+    <section class="menu2">
+        <div class="recepie">Kachori</div>
+        <p>"Kachori" is fried food. It is made of floor and filled by "saaran". It is eaten with "chatani".</p>
+    </section>
     </div>
-</body>    
+    <div class="menus menu3">
+    <section class="menu3">
+        <div class="recepie">Pavvada</div>
+        <p>"Pavada" is easy to made. It has a potato recepie inside a bread(Pav) and fried in oil. It is light spicy in taste.</p>
+    </section>
+    </div>
+</body>            
 </html>
